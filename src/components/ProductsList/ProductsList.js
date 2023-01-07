@@ -7,6 +7,7 @@ const ProductsList = ({products}) => {
       {products.map((product) => {
         return <ProductCard product={product} key = {product.id}/>;
       })}
+      {products.length == 0 && <h1>No Products Found</h1>}
     </div>
   );
 };
