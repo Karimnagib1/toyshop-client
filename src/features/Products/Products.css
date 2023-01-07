@@ -1,7 +1,6 @@
 .products {
   text-align: center;
   min-height: 1000px;
-
   margin-top: 80px;
 }
 
@@ -19,8 +18,7 @@ select {
 .wrap-products {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;
-
+  justify-content: center;
 }
 
 .filter-products {
