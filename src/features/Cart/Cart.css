@@ -43,14 +43,22 @@
 
 .cartItem .button {
 
-    border: none;
+    border: 1px solid #8c3629;
     font-size: 18px;
     margin-left: 0.5em;
     font-weight: bold;
-    color: white;
-    background-color: #5f190e;
+    color: #5f190e;
+    background-color: white;
     padding: 10px 20px;
     border-radius: .75em;
+    cursor: pointer;
+    transition: 0.5s
+}
+.cartItem .button:hover {
+
+    background-color: #5f190e;
+    color: white;
+    border: 1px solid #5f190e;
 }
 
 
