@@ -1,0 +1,62 @@
+#cart {
+
+    min-height: 63vh;
+    margin: 100px 0;
+    margin-left:20px;
+    margin-right: 20px; 
+}
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px; 
+    
+}
+
+.cartItem .item_quantity {
+    vertical-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.cartItem .price_col {
+    vertical-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+
+}
+.cartItem .item_title {
+
+    display: block;
+    font-size: 24px;
+    width: 30vw;
+    font-weight: bold;
+}
+
+.cartItem .product_img{
+
+    width: 10em; 
+    display:block;
+}
+
+.cartItem .button {
+
+    border: none;
+    font-size: 18px;
+    margin-left: 0.5em;
+    font-weight: bold;
+    color: white;
+    background-color: #5f190e;
+    padding: 10px 20px;
+    border-radius: .75em;
+}
+
+
+.empty-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}

@@ -1,0 +1,40 @@
+.filter-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+  width: 20%;
+  max-width: 300px;
+  padding: 0 20px;
+}
+
+input,
+textarea {
+    font-size: 0.9rem;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    margin: 5px 0 10px 0;
+}
+
+select {
+  background-color: brown;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  min-width: 100px;
+  min-height: 30px;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.filter-products p {
+  width: 60%;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}

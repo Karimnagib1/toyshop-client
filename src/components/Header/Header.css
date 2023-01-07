@@ -1,0 +1,73 @@
+.header-container {
+    max-width: 100%;
+    width: 100%;
+}
+
+header {
+    height: 60px;
+    width: inherit;
+    max-width:inherit;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-colored {
+    
+    background-color: rgb(66, 16, 16);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.nav-transparent {
+    
+    background-color: rgba(250, 235, 215, 0);
+}
+
+ul {
+    margin:0;
+    display:block;
+    z-index:100;
+}
+
+ul li, .authentication {
+    display:inline-block;
+    padding: 10px;
+    font: normal 16px arial ;
+    color: #dda878;
+    margin: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+ ul li:hover,  .authentication:hover {
+
+    color: rgb(66, 16, 16);
+    background-color: beige;
+    cursor:pointer;
+    transition: 0.5s;
+ }
+.search-container {
+    display: block;
+    align-items: center;
+    transition: 0.5s;
+}
+.search-container>input {
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+
+
+
+.authetication-container {
+    margin-right: 20px;
+    display:flex;
+    flex-wrap: nowrap;
+}
+
+.signup {
+    background-color: #dfbf9f;
+    color: rgb(66, 16, 16);
+}

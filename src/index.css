@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.section-title {
+  font-size: 2.5rem;
+  
+  font-family: Helvetica;
+  text-align: center;
+}
+
+.content-wrap {
+  margin-top: 30px;
+  
+  min-height: 90vh;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+
+}
