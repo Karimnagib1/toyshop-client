@@ -23,8 +23,8 @@ const CartItemCard = ({item}) => {
         <p className = 'item_quantity'>Quantity: {item.quantity}</p>
 
         <div className='buttons'>
-            <button className = "button" onClick = {handlePlusClick}>+</button>
-            <button className = "button" onClick={handleMinusClick}>-</button>
+            <div className = "button" onClick = {handlePlusClick}><p>+</p></div>
+            <div className = "button" onClick={handleMinusClick}><p>-</p></div>
         </div>
     </div>
     );
