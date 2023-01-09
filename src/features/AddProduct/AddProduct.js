@@ -39,7 +39,7 @@ const AddProduct = () => {
     if (response.status === 200){
       navigate('/');
     } else {
-      alert ("Something went wrong!");
+      alert("Something went wrong!");
     }
   }
 
