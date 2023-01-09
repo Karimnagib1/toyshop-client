@@ -23,14 +23,14 @@ const FilterProducts = () => {
 
     const handleMinChange = (e) => {
         if(e.target.value === ''){
-            e.target.value = 0;
+            return setMin(0);
         }
         setMin(e.target.value);
     }
 
     const handleMaxChange = (e) => {
         if(e.target.value === ''){
-            e.target.value = 10000;
+            return setMax(10000);
         }
         setMax(e.target.value);
     }
@@ -52,25 +52,25 @@ const FilterProducts = () => {
 
         if (category === '' && brand === '') {
             filteredProducts = products.filter( product => {
-                return (Number(product.price) >= min && Number(product.price) <= max);
+                return ( (product.price - (product.price * product.discountPercentage/100)) >= min &&  (product.price - (product.price * product.discountPercentage/100)) <= max);
             });
             return dispatch(setFilteredProducts(filteredProducts));
         }
         if (category === '') {
             filteredProducts = products.filter( product => {
-                return (Number(product.price) >= min && Number(product.price) <= max && product.brand === brand);
+                return ( (product.price - (product.price * product.discountPercentage/100)) >= min &&  (product.price - (product.price * product.discountPercentage/100)) <= max && product.brand === brand);
             });
             return dispatch(setFilteredProducts(filteredProducts));
         }
         if (brand === '') {
             filteredProducts = products.filter( product => {
-                return (Number(product.price) >= min && Number(product.price) <= max && product.category === category);
+                return ( (product.price - (product.price * product.discountPercentage/100)) >= min &&  (product.price - (product.price * product.discountPercentage/100)) <= max && product.category === category);
             });
             return dispatch(setFilteredProducts(filteredProducts));
         }
 
         filteredProducts = products.filter(product => {
-            return (Number(product.price) >= min && Number(product.price) <= max && product.category === category && product.brand === brand);
+            return ( (product.price - (product.price * product.discountPercentage/100)) >= min &&  (product.price - (product.price * product.discountPercentage/100)) <= max && product.category === category && product.brand === brand);
         });
         dispatch(setFilteredProducts(filteredProducts));
 

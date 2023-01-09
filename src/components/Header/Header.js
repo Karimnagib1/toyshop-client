@@ -8,8 +8,8 @@ import { faShoppingCart, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { useLocation } from "react-router-dom";
 import { clearCart } from "../../features/Cart/CartSlice";
 import "./Header.css";
-
 import { Link } from "react-router-dom";
+
 const Header = () => {
   const location = useLocation();
   const dispatch = useDispatch();
@@ -45,7 +45,7 @@ const Header = () => {
         <nav>
           <ul>
             <Link to="/">
-              <li>Home</li>
+              <li >Home</li>
             </Link>
             <li>Contact Us</li>
             <li>About</li>

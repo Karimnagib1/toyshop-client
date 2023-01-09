@@ -41,6 +41,3 @@ const SearchBox = () => {
 };
 
 export default SearchBox;
-
-
-// search destroys filters

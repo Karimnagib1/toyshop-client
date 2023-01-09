@@ -32,6 +32,8 @@ const Login = () => {
       const payload = JSON.parse(window.atob(response.token.split(".")[1]));
       dispatch(authUser(payload));
       navigate("/");
+    } else {
+      alert('Invalid credentials');
     }
   };
 
@@ -44,7 +46,7 @@ const Login = () => {
             placeholder="Enter your email"
             id="email"
             name="email"
-            type="text"
+            type="email"
             onChange={(e) => setEmail(e.target.value)}
           />
           <label htmlFor="password">Password</label>

@@ -18,17 +18,23 @@ const Signup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // let data = new FormData();
-    // data.append("name", name);
-    // data.append("email", email);
-    // data.append("password", password);
-    // data.append("password2", password2);
+
     let data = {
       name: name,
       email: email,
       password: password,
       password2: password2,
     };
+    if (password.length < 6) {
+      alert("Password must be at least 6 characters");
+      return;
+    }
+    if (password !== password2) {
+      alert("Passwords do not match");
+      return;
+    }
+
+    
     const response = await axios.post(
       "https://toyshop-ekqp.onrender.com/api/users/register",
       data
@@ -69,6 +75,7 @@ const Signup = () => {
             id="password"
             name="password"
             type="password"
+       
             onChange={(e) => {
               setPassword(e.target.value);
             }}
