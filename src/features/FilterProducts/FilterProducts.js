@@ -4,9 +4,6 @@ import './FilterProducts.css';
 import {useSelector, useDispatch} from 'react-redux';
 import {selectFilteredProducts, selectProducts, setFilteredProducts} from '../Products/ProductsSlice';
 
-
-
-
 const FilterProducts = () => {
     
     let [min, setMin] = useState(0);
@@ -96,6 +93,7 @@ const FilterProducts = () => {
     return (
         <div className='filter-products'>
             <h2>Filters</h2>
+
             <p>Price Range</p>
             <input type = "number" placeholder = "Min" onChange = {handleMinChange} />
             <input type = "number" placeholder = "Max" onChange = {handleMaxChange}/>

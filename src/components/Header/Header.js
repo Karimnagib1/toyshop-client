@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { useLocation } from "react-router-dom";
 import { clearCart } from "../../features/Cart/CartSlice";
+import { getProducts } from "../../features/Products/ProductsSlice";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
@@ -45,7 +46,7 @@ const Header = () => {
         <nav>
           <ul>
             <Link to="/">
-              <li >Home</li>
+              <li onClick = {()=> dispatch(getProducts())}>Home</li>
             </Link>
             <li>Contact Us</li>
             <li>About</li>
